@@ -1,6 +1,6 @@
 {
     "app_name": "Awesome Search",
-    "description": "Search awesome list resources directly from your CLI!",
+    "description": "Search awesome list resources directly from your CLI! using RediSearch",
     "rank": "74",
     "type": "Full App",
     "contributed_by": "Community",
