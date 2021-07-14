@@ -7,7 +7,7 @@
     "repo_url": "https://github.com/redis-developer/awesome-search",
     "download_url": "https://github.com/redis-developer/awesome-search/archive/refs/heads/master.zip",
     "hosted_url": "https://pypi.org/project/awesome-search/0.1.2/",
-    "quick_deploy": "true",
+    "quick_deploy": "false",
     "deploy_buttons": [
         {
             "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/awesome-search.git" 
