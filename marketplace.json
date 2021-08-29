@@ -1,13 +1,13 @@
 {
     "app_name": "Awesome Search",
     "description": "Search awesome list resources directly from your CLI! using RediSearch",
-    "rank": "74",
+    "rank": 85,
     "type": "Full App",
     "contributed_by": "Community",
     "repo_url": "https://github.com/redis-developer/awesome-search",
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/awesome-search/master/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/awesome-search/archive/refs/heads/master.zip",
-    "hosted_url": "https://pypi.org/project/awesome-search/0.1.2/",
+    "hosted_url": "",
     "quick_deploy": "false",
     "deploy_buttons": [
         {
