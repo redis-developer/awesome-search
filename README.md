@@ -1,11 +1,11 @@
 # Awesome Search
 
-Find and index quality [awesome list](https://github.com/sindresorhus/awesome) resources directly from [Raycast](https://raycast.com/) or your CLI!
+Find and index quality [awesome list](https://github.com/redis-developer/awesome) resources directly from [Raycast](https://raycast.com/) or your CLI!
 
 Powered by blazing fast [RediSearch](https://oss.redislabs.com/redisearch/).
 
 
-![Demo](https://raw.githubusercontent.com/mrkarezina/awesome-search/master/assets/demo.png)
+![Demo](https://raw.githubusercontent.com/redis-developer/awesome-search/master/assets/demo.png)
 
 
 ## Why
@@ -106,7 +106,7 @@ Redis Queue is used to submit new indexing jobs.
 
 ### Architecture
 
-![Diagram](https://raw.githubusercontent.com/mrkarezina/awesome-search/master/assets/diagram.png)
+![Diagram](https://raw.githubusercontent.com/redis-developer/awesome-search/master/assets/diagram.png)
 
 ### Schema
 
