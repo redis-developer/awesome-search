@@ -1,6 +1,6 @@
 {
     "app_name": "Awesome Search",
-    "description": "Search awesome list resources directly from your CLI! using RediSearch",
+    "description": "Search awesome list resources directly from your CLI! using Search and Query feature of Redis",
     "rank": 85,
     "type": "Full App",
     "contributed_by": "Community",
@@ -11,10 +11,10 @@
     "quick_deploy": "false",
     "deploy_buttons": [
         {
-            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/awesome-search.git" 
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/awesome-search.git"
         },
         {
-            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/awesome-search.git" 
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/awesome-search.git"
         }
     ],
     "language": [
@@ -28,11 +28,11 @@
         "FT.SEARCH",
         "FT.DROPINDEX"
     ],
-    "redis_features": [
+    "redis_use_cases": [
         "Caching"
     ],
-    "redis_modules": [
-        "RediSearch"
+    "redis_features": [
+        "Search and Query"
     ],
     "app_image_urls": [
         "https://raw.githubusercontent.com/redis-developer/awesome-search/master/assets/demo.png",
@@ -44,7 +44,6 @@
     ],
     "verticals": [
         "Others"
-     
     ],
     "markdown": "https://raw.githubusercontent.com/redis-developer/awesome-search/master/README.md"
 }
