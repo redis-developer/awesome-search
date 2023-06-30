@@ -2,7 +2,7 @@
 
 Find and index quality [awesome list](https://github.com/redis-developer/awesome) resources directly from [Raycast](https://raycast.com/) or your CLI!
 
-Powered by blazing fast [RediSearch](https://oss.redislabs.com/redisearch/).
+Powered by blazing fast [Redis Search](https://oss.redislabs.com/redisearch/).
 
 
 ![Demo](https://raw.githubusercontent.com/redis-developer/awesome-search/master/assets/demo.png)
@@ -25,13 +25,13 @@ Currently the prototype features searching across projects featured on awesome l
 ## Next steps
 
 Indexing engineering blogs which might not rank as high in search results. For an example check out [this](https://cse.google.com/cse?cx=7170ef95a8051e78a) programmable search engine which only indexes engineering blogs on [this awesome list](https://github.com/kilimchoi/engineering-blogs).
- 
+
 There is also a Users module currently in the Django app. This module is for creating an API key that users can save to the cli app. This allows for restricting accounts that can index new lists thus reducing spam.
 
 
 ## Stack
 - CLI - *Python*, *Raycast*
-- Backend - *Django*, *Redis (RediSearch)*
+- Backend - *Django*, *Redis *
 
 
 
@@ -120,7 +120,7 @@ SADD resource:github:{owner}:{repo_name}:lists {list}
 ```
 
 ```
-SET resource:github:{owner}:{repo_name} 
+SET resource:github:{owner}:{repo_name}
 {
 	'repo_name': resource['name'],
 	'lists': # SMEMBERS resource:github:{owner}:{repo_name}:lists
@@ -145,7 +145,7 @@ SADD resource:data:awesome_lists {list}
 ### Search
 
 #### Index
-All keys storing resource data are prefixed with `resource:`. This allows for easily defining a Redisearch index with all the different resource types we want to search.
+All keys storing resource data are prefixed with `resource:`. This allows for easily defining aRedis Searchindex with all the different resource types we want to search.
 
 ```python
 definition = IndexDefinition(prefix=['resource:'])
@@ -162,7 +162,7 @@ self.client.create_index([TextField('body', weight=1),
 
 ```
 This specifies which fields should be indexed.  Additionally the weight argument allows for increasing the effect of matches in certain fields such as "repo_name".
- 
+
 Once the index is created documents are indexed in real time as they are added to Redis. To add new documents to the index simply create a hash for that document.
 
 
@@ -224,7 +224,7 @@ pip install -r requirements.txt
 
 ### Redis
 
-Start a Docker container running the Redis instance with the Redisearch module.
+Start a Docker container running the Redis instance with Redis Search.
 ```
 docker run -d -p 6379:6379 redislabs/redisearch:2.0.0
 ```
@@ -241,7 +241,7 @@ Copy / set the appropriate keys into `config.ini`.
 ### Seed database
 Once Redis is up and running seed the database with some awesome list data.
 
-In `assets/list_of_lists.txt` configure which awesome lists you would like to scrape and the maximum number of repos to insert per list. To limit the number of projects scraped decrease `MAX_RES_PER_LIST` in `settings.py`. 
+In `assets/list_of_lists.txt` configure which awesome lists you would like to scrape and the maximum number of repos to insert per list. To limit the number of projects scraped decrease `MAX_RES_PER_LIST` in `settings.py`.
 
 ```
 python -m indexer.index
